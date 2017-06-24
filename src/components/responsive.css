@@ -1,4 +1,15 @@
 /* For mobile phones: */
+/*
+Eu não entendi bem sua pergunta, mas pode ser o seguinte,
+seu css quando esta menor que 768 ele pega o padrão definido no css
+[class*="col-"] {
+    width: 100%;
+}
+mas depois que fica maior, entra no @media screen e altera o valor col-, o que antes estava 100% agora varia de acordo com a class..
+você deve verificar seus elementos html, ver quais class vc usou e reconfigurar, ou seja, ajustar para col-12 que é 100%, pelo
+notei no video vc esta usando dentro de um dos elementos a coluna col-8, e ai vai ficar menor mesmo quando a tela ficar maior,
+acho que se mudar isso ja resolve.
+*/
 [class*="col-"] {
     width: 100%;
 }
